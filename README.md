@@ -34,7 +34,7 @@ Things you may want to cover:
 ### Association
 - has_many :members
 - has_many :messages
-- has_and_belongs_to_many :groups
+- has_many :groups,through: :members
 
 ## membersテーブル（中間テーブル）
 
@@ -56,7 +56,7 @@ Things you may want to cover:
 ### Association
 - has_many :members
 - has_many :messages
-- has_and_belongs_to_many :users
+- has_many :users,through: :members
 
 ## messagesテーブル
 
